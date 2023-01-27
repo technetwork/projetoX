@@ -8,10 +8,15 @@ body {
     position: absolute;
     background-color: #ffffff;
     width: 100vw;
-    height: 100vh;
+    height: 143vh;
     opacity: 0.9;
     min-width: 450px;
     min-height: 920px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
 .titulo {
@@ -68,6 +73,10 @@ body {
 
 @media (max-width: 1000px) {
 
+    body {
+        overflow: visible;
+    }
+
     .titulo h1 {
         white-space: normal;
         letter-spacing: normal;
@@ -83,7 +92,7 @@ body {
 @media (max-width: 580px) {
 
     .titulo {
-        top: 7vh;
+        top: 6vh;
     }
 
     .carousel-container {

@@ -1,0 +1,139 @@
+.music-slide-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.music-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 20vh;
+    width: 300px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 21px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cover {
+    width: 250px;
+    height: 250px;
+    max-width: 250px;
+    margin-top: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 18px;
+}
+
+.music-info {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 4px;
+}
+
+.music-info h1 {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+}
+
+.music-info h3 {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+}
+
+.controls {
+    position: relative;
+    display: flex;
+    top: 5%;
+    flex-direction: column;
+    margin: 10px;
+} 
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider input {
+    width: 90%;
+}
+
+.barra_deslizante_slider {
+    appearance: none;
+    background: #000000;
+    border-radius: 10px;
+    height: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.barra_deslizante_slider::-webkit-slider-thumb {
+    appearance: none;
+    display: block;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    background: #000000;
+    border-radius: 10px;
+    outline: none;
+    left: 96%;
+}
+
+.music-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 3em;
+}
+
+.prev, .play-pause, .next{
+    cursor: pointer;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.full-mute {
+    position: absolute;
+    font-size: .4em;
+    margin-top: 0px;
+    margin-left: 220px;
+    font-weight: 100;
+    color: #000000c9;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1000px) {
+
+    
+    
+    
+}
+
+@media (max-width: 580px) {
+    
+    .music-slide-container {
+        flex-direction: column-reverse;
+    }
+    
+    .music-container {
+        top: 5vh;
+        margin-bottom: 80px;
+    }
+
+}
