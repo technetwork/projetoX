@@ -105,4 +105,24 @@ function musicRender(index) {
         document.querySelector("#track-artist").innerText = music_list[index].artist;
         document.querySelector(".cover").src = music_list[index].img;
     });
+
+    saveMusicCache(music_list[index].name, music_list[index].artist, music_list[index].img, music_list[index].music);
+
+
 }
+
+function saveMusicCache(name, artist, img, music) {
+    localStorage.setItem("name", name);
+    localStorage.setItem("artist", artist);
+    localStorage.setItem("img", img);
+    localStorage.setItem("music", music);
+}
+
+function restoreMusic() {
+    document.querySelector("#track-title").innerText = localStorage.getItem("name");
+    document.querySelector("#track-artist").innerText = localStorage.getItem("artist");
+    document.querySelector(".cover").src = localStorage.getItem("img");
+    audio.setAttribute("src", localStorage.getItem("music"));
+}
+
+window.onload = restoreMusic;
