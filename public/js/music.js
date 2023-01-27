@@ -38,6 +38,8 @@ function sliderUpdate() {
         document.querySelector(".next").click();
     }
 
+    localStorage.setItem("currentTime", audio.currentTime);
+
 }
 
 
@@ -53,6 +55,7 @@ document.querySelector(".prev").addEventListener("click", () => {
     playAudio();
 })
 
+
 document.querySelector(".next").addEventListener("click", () => {
     indexMusica++;
 
@@ -64,6 +67,7 @@ document.querySelector(".next").addEventListener("click", () => {
     musicRender(indexMusica);
     playAudio();
 })
+
 
 document.querySelector(".full-mute").addEventListener("click", () => {
 
@@ -87,6 +91,7 @@ document.querySelector(".full-mute").addEventListener("click", () => {
 
 })
 
+
 function musicRender(index) {
     
     audio.setAttribute("src", music_list[index].music);
@@ -100,6 +105,7 @@ function musicRender(index) {
     saveMusicCache(music_list[index].name, music_list[index].artist, music_list[index].img, music_list[index].music);
 
 }
+
 
 function saveMusicCache(name, artist, img, music) {
 
@@ -121,6 +127,7 @@ function restoreMusic() {
         document.querySelector("#track-artist").innerText = localStorage.getItem("artist");
         document.querySelector(".cover").src = localStorage.getItem("img");
         audio.setAttribute("src", localStorage.getItem("music"));
+        audio.currentTime = localStorage.getItem("currentTime");
     }
 
 }
