@@ -10,8 +10,6 @@ body {
     width: 100vw;
     height: 143vh;
     opacity: 0.9;
-    min-width: 450px;
-    min-height: 920px;
 }
 
 .container {
@@ -33,8 +31,7 @@ body {
 
 .titulo h1 {
     width: 100%;
-    letter-spacing: 10px;
-
+    letter-spacing: 8px;
     animation: typing 5s steps(52), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -54,7 +51,6 @@ body {
     background-color: #ffffff;
     border-radius: 30px;
 }
-
 
 .carousel {
     position: relative;
@@ -77,6 +73,7 @@ body {
 
     body {
         overflow: visible;
+        overflow-x: hidden;
     }
 
     .titulo h1 {
