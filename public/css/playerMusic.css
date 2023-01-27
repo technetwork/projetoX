@@ -136,3 +136,16 @@
     }
 
 }
+
+@media (max-height: 700px) {
+    
+    .music-slide-container {
+        flex-direction: column-reverse;
+    }
+    
+    .music-container {
+        top: 20vh;
+        margin-bottom: 80px;
+    }
+
+}
