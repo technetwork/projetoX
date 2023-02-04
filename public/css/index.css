@@ -88,6 +88,24 @@ body {
 
 }
 
+@media (max-width: 1366px) {
+
+    .carousel{
+        width: 35vw;
+    }
+
+    .carousel-container{
+        top: 12vh;
+        background-color: #ffffff00;
+    }
+
+    .music-container{
+        top: 10vh;
+        scale: .8;
+    }
+
+}
+
 @media (max-width: 580px) {
 
     .titulo {
@@ -99,7 +117,7 @@ body {
     }
 
     .carousel {
-        width: 360px;
+        width: 90vw;
     }
 }
 

@@ -118,12 +118,6 @@
 }
 
 
-@media (max-width: 1000px) {
-
-    
-    
-}
-
 @media (max-width: 580px) {
     
     .music-slide-container {
@@ -137,7 +131,7 @@
 
 }
 
-@media (max-height: 700px) {
+@media (max-height: 610px) {
     
     .music-slide-container {
         flex-direction: column-reverse;
